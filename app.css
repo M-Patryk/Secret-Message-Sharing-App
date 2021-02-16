@@ -1,3 +1,7 @@
 .row{
     margin-top: 25vh;
 }
+
+#showMsgMessage{
+    margin-top: 0;
+}
