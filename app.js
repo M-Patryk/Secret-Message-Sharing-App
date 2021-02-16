@@ -7,5 +7,12 @@ document.querySelector('form').addEventListener('submit', (event) => {
 
 	const linkInput = document.querySelector('#link-input');
 	linkInput.value = `${window.location}#${encrypted}`;
-	linkInput.select();
+	
+
+	const msgPanel = document.querySelector('#msgPanel')
+	msgPanel.classList.add('hide')
+	const sharePanel = document.querySelector('#sharePanel')
+	sharePanel.classList.remove('hide')
+	linkInput.select()
+	document.execCommand('copy')
 });
